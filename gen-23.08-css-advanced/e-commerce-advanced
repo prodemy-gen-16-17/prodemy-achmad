@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,500;0,700;1,200;1,300;1,500;1,600&family=Croissant+One&family=Poppins:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,500;0,700;1,200;1,300;1,500;1,600&family=Croissant+One&family=Playfair+Display:ital,wght@0,500;1,400;1,500&family=Poppins:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <title>css dasar</title>
+</head>
+
+<body>
+    <div>
+        <!-- awal navbar -->
+        <div class="topnav">
+            <a class="active" href="#">Femworld</a>
+            <a href="#">New Arrivals</a>
+            <a href="#">All Product</a>
+            <a href="#">Blogs</a>
+            <a href="#">Contact Us</a>
+            <a href="#" class="logo-search">Logo Search</a>
+            <a href="#" class="get-started">Get Started</a>
+        </div>
+        <!-- akhir navbar -->
+
+        <!-- awal content -->
+        <div class="description">
+            <h1>Luxurious Executive Model</h1>
+            <p>Fashion is a form of self. expression and autonomy for a certain period. fashion describes the expression
+                of self and increase self-confidence</p>
+        </div>
+
+        <div class="image-container">
+            <img src="images/model8.png" alt="Gambar 1">
+            <img src="images/model9.png" alt="Gambar 3">
+            <img src="images/model11.png" alt="Gambar 2">
+
+        </div>
+
+        <div class="new_arivals">
+            <h1>New Arrivals this Spring Season</h1>
+            <p>Spring has arrived, we come with fashion choices that are suitable to be combined with this season, lots
+                of formal and informal clothes.</p>
+
+        </div>
+
+        <div class="image">
+            <figure>
+                <img src="images/baju4.jpg" alt="Gambar 1">
+                <figcaption>Black women Suit</figcaption>
+                <figcaption>$123</figcaption>
+            </figure>
+            <figure>
+                <img src="images/baju5.jpg" alt="Gambar 2">
+                <figcaption>Shiny Golden Suit</figcaption>
+                <figcaption>$200</figcaption>
+            </figure>
+            <figure>
+                <img src="images/baju6.jpg" alt="Gambar 3">
+                <figcaption>Black Formal Set</figcaption>
+                <figcaption>$165</figcaption>
+            </figure>
+            <figure>
+                <img src="images/baju7.jpg" alt="Gambar 4">
+                <figcaption>Flower Women Suit</figcaption>
+                <figcaption>$133</figcaption>
+            </figure>
+        </div>
+
+        <div class="model1">
+            <img src="images/model1.png" alt="">
+        </div>
+
+        <div class="new_arivals2">
+            <h1>Last previous collection</h1>
+            <p>The last stock from the previous season, we still provide last season for those of you.</p>
+        </div>
+
+        <div class="image2">
+            <figure>
+                <img src="images/model2.png" alt="Gambar 1">
+                <figcaption>Previous Winter Season</figcaption>
+            </figure>
+            <figure>
+                <img src="images/model3.png" alt="Gambar 2">
+                <figcaption>Previous Summer Season</figcaption>
+            </figure>
+
+        </div>
+
+        <div class="top">
+            <h1>Top lookbook 2022</h1>
+            <p>You can see our lookbook, from several seasons you can see how models use our products.</p>
+        </div>
+
+        <div class="image3">
+            <figure>
+                <img src="images/model4.png" alt="Gambar 1">
+                <figcaption>Formal lookbook</figcaption>
+            </figure>
+            <figure>
+                <img src="images/model5.png" alt="Gambar 2">
+                <figcaption>Summer lookbook</figcaption>
+            </figure>
+            <figure>
+                <img src="images/model6.png" alt="Gambar 3">
+                <figcaption>Spring lookbook</figcaption>
+            </figure>
+        </div>
+
+        <div class="customer">
+            <h1>Our Customer Testimonials</h1>
+            <p>Our brand is very trusted, you can see from some of the reviews of some of our customers.</p>
+            <ul class="ul-test">
+                <li class="li-test">
+                    "I really like this brand, the design looks elegant and very comfortable to wear, and I often wear
+                    it."
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </li>
+                <li class="li-test">
+                    "I like this brand, this brand always keeps up with the times and the models are not marketable look
+                    exclusive"
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+
+                </li>
+                <li class="li-test">
+                    "All the materials used are very comfortable and look very good when worn."
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- <div class="container">
+            <img src="images/model7.png" alt="">
+            <h1>Join Our Community</h1>
+            <p>We have the comunity to sharing more information about us. to get our promo you can leave email in this form above.</p>
+            <input type="text" placeholder="Email address" name="mail" required>
+        </div> -->
+        <div class="container">
+            <img src="images/model7.png" alt="">
+            <div class="content">
+                <h1>Join Our Community</h1>
+                <p>We have the community to share more information about us. To get our promo, you can leave your email
+                    address in the form below.</p>
+            </div class="email-input">
+            <input type="text" placeholder="Email address" name="mail" required>
+        </div>
+
+        <!-- akhir content -->
+
+        <!-- footer -->
+        <div class="container-footer w-container">
+            <div class="w-row">
+                <div class="footer-column w-clearfix w-col w-col-4"><img
+                        src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/596d33f36607b12cfdaf8ad2_LogoWhite.png"
+                        alt="" width="40" class="failory-logo-image">
+                    <h3 class="footer-failory-name">Femworld</h3>
+                    <p class="footer-description-failory">Fashion a form of self. expression and automony at a particular period. Fashion a form of self.<br></p>
+                </div>
+                <div class="footer-column w-col w-col-8">
+                    <div class="w-row">
+                        <div class="w-col w-col-8">
+                            <div class="w-row">
+                                <div class="w-col w-col-7 w-col-small-6 w-col-tiny-7">
+                                    <h3 class="footer-titles">Service</h3>
+                                    <p class="footer-link"></span></a><span><br></span><a href=""><span
+                                       class="footer-link">Client Services<br></span></a><a href=""><span
+                                       class="footer-link">Sitemaps<br></span></a><a href=""><span
+                                       class="footer-link">Store findere</span></a><strong><br></strong></p>
+                                </div>
+                                <div class="w-col w-col-5 w-col-small-6 w-col-tiny-5">
+                                    <h3 class="footer-titles">Our Binefit</h3>
+                                    <p class="footer-links"><a href=""><span class="footer-link">Shipping & Return<br></span></a>
+                                        <a href=""><span class="footer-link">Our packaging<br></span></a><a href=""><span class="footer-link"></span></a>
+                                        <a href=""><span class="footer-link">Care guide<br></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column-center-mobile w-col w-col-4">
+                            <h3 class="footer-titles">Support</h3>
+                                    <p class="footer-links"><a href=""><span class="footer-link">Sustainability<br></span></a>
+                                        <a href=""><span class="footer-link">Careers<br></span></a><a href=""><span class="footer-link"></span></a>
+                                        <a href=""><span class="footer-link">term & Condition<br></span></a>
+                                        <a href=""><span class="footer-link">Privacy & Policy<br></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer end -->
+
+
+    </div>
+
+</body>
+
+</html>

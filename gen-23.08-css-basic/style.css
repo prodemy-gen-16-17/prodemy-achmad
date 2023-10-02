@@ -1,0 +1,91 @@
+body {
+    background-color: rgb(92, 85, 85);
+}
+
+/* Reset margin dan padding pada semua elemen */
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+/* Reset margin dan padding pada elemen-elemen dengan latar belakang putih */
+.topnav,
+.topnav a,
+.description,
+.image-container,
+.new_arivals,
+.image {
+    margin: 0;
+    padding: 0;
+}
+
+.topnav {
+    background-color: white;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.logo-search {
+    position: absolute;
+    top: 40px;
+    right: 150px ;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    border: none;
+}
+
+
+.get-started {
+    position: absolute;
+    top: 40px;
+    right: 50px ;
+    border: 1px solid #000;
+    padding: 8px 16px;
+    background-color: black;
+    border-radius: 5px;
+    color: white !important;
+    text-decoration: none;
+}
+
+
+.description {
+    background-color: white;
+    text-align: center;
+    font-family: 'Bitter', serif, 'Croissant One', cursive, 'Poppins', sans-serif;
+}
+
+.image-container {
+    background-color: white;
+    text-align: center;
+}
+
+
+.image-container img,
+.image img {
+    max-width: 15%;
+    height: auto;
+    margin: 0 10px;
+}
+
+.new_arivals {
+    background-color: white;
+    text-align: center;
+    font-family: 'Bitter', serif, 'Croissant One', cursive, 'Playfair Display', serif, 'Poppins', sans-serif;
+}
+
+.image {
+    background-color: white;
+    text-align: center;
+}

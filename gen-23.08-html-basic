@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>goal Indonesia</title>
+</head>
+
+<body>
+
+    <!-- INI AWAL NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/gambar10.jpg" class="d-block w-50" alt="..."></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="text-white nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                      Terbaru
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Semua berita</a></li>
+                      <li><a class="dropdown-item" href="#">Transfer</a></li>
+                      <li><a class="dropdown-item" href="#">jadwal TV</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="text-white nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Kompetisi
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Liga Inggris</a></li>
+                      <li><a class="dropdown-item" href="#">liga Spanyol</a></li>
+                      <li><a class="dropdown-item" href="#">Liga Jerman</a></li>
+                    </ul>
+                  </li>
+              <li class="nav-item dropdown">
+                <a class="text-white nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nasional
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">jadwal</a></li>
+                  <li><a class="dropdown-item" href="#">Klasemen</a></li>
+                  <li><a class="dropdown-item" href="#">Tim Nasional</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!-- akhir navbar -->
+
+<!-- awal carousel -->
+
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/gambar 1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Empoli vs Inter Milan</h3>
+        <p>Inter milan Menang tipis dengan score 0-1.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/gambar4.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Atlético Madrid v Real Madrid</h3>
+        <p>Di Depan Simeone, Ancelotti Hanya Bapak-Bapak Italia Biasa.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/gambar3.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>asian Games Timnas U-23</h5>
+        <p>Walaupun kalah timnas tetap lolos,karena menjadi peringkat 3 terbaik.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- akhir carousel -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

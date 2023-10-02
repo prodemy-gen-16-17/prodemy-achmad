@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,500;0,700;1,200;1,300;1,500;1,600&family=Croissant+One&family=Poppins:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,500;0,700;1,200;1,300;1,500;1,600&family=Croissant+One&family=Playfair+Display:ital,wght@0,500;1,400;1,500&family=Poppins:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <title>css dasar</title>
+</head>
+
+<body>
+    <div>
+        <!-- awal navbar -->
+        <div class="topnav">
+            <a class="active" href="#">Femworld</a>
+            <a href="#">New Arrivals</a>
+            <a href="#">All Product</a>
+            <a href="#">Blogs</a>
+            <a href="#">Contact Us</a>
+            <a href="#" class="logo-search">Logo Search</a>
+            <a href="#" class="get-started">Get Started</a>
+        </div>
+        <!-- akhir navbar -->
+
+        <!-- awal content -->
+        <div class="description">
+            <h1>Luxurious Executive Model</h1>
+            <p>Fashion is a form of self. expression and autonomy for a certain period. fashion describes the expression
+                of self and increase self-confidence</p>
+        </div>
+
+        <div class="image-container">
+            <img src="images/baju.jpg" alt="Gambar 1">
+            <img src="images/baju 1.jpg" alt="Gambar 2">
+            <img src="images/baju 2.jpg" alt="Gambar 3">
+        </div>
+
+        <div class="new_arivals">
+            <h1>New Arrivals this Spring Season</h1>
+            <p>Spring has arrived, we come with fashion choices that are suitable to be combined with this season, lots
+                of formal and informal clothes.</p>
+
+        </div>
+
+        <div class="image">
+            <img src="images/baju4.jpg" alt="Gambar 1">
+            <img src="images/baju5.jpg" alt="Gambar 2">
+            <img src="images/baju6.jpg" alt="Gambar 3">
+            <img src="images/baju7.jpg" alt="Gambar 3">
+        </div>
+
+        <!-- akhir content -->
+
+
+
+    </div>
+
+</body>
+
+</html>
