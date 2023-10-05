@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Product</title>
+</head>
+<body class="bg-gray-600 p-5">
+    <!-- awal navbar -->
+    <div class="topnav bg-white overflow-hidden text-center">
+        <a class="active inline-block py-2 px-4" href="#">Femworld</a>
+        <a href="#" class="inline-block py-2 px-4">New Arrivals</a>
+        <a href="#" class="inline-block py-2 px-4">All Product</a>
+        <a href="#" class="inline-block py-2 px-4">Blogs</a>
+        <a href="#" class="inline-block py-2 px-4">Contact Us</a>
+        <a href="#" class="logo-search font-bold text-black absolute top-30 right-190">Logo Search</a>
+        <a href="#"
+            class="get-started absolute top-30 right-50 border border-black py-1 px-2 bg-black rounded text-white">Get
+            Started</a>
+    </div>
+    <!-- akhir navbar -->
+    <div id="carouselExampleControls" class="relative">
+        <!--Product items-->
+        <div class="relative float-left -mr-[100%] w-80 ml-auto my-4 transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-item data-te-carousel-active>
+            <img src="images/korosel2.jpeg" class="block w-full" alt="Wild Landscape" data-href="next_page.html" />
+        </div>
+        <div class="bg-slate-400 text-center py-4">
+            <p>Summer Collection</p>
+            <h1 class="text-3xl font-bold">Black Turtle Sec Skin</h1>
+            <p>This shirt shows your body shape perfectly,with good summer materials.</p>
+            <h1 class="text-3xl font-bold">$450</h1>
+            <p>wa've 3 color for you.</p>
+            <!-- Kotak Kecil 1 (Merah dengan Border Hitam) -->
+            <div class="w-8 h-8 mx-auto mt-4 bg-red-500 border border-black cursor-pointer inline-block"
+                onclick="onClickKotakMerah()"></div>
+
+            <!-- Kotak Kecil 2 (Putih dengan Border Hitam) -->
+            <div class="w-8 h-8 mx-auto mt-4 bg-white border border-black cursor-pointer inline-block"
+                onclick="onClickKotakPutih()"></div>
+
+            <!-- Kotak Kecil 3 (Hitam dengan Border Hitam) -->
+            <div class="w-8 h-8 mx-auto mt-4 bg-black border border-black cursor-pointer inline-block"
+                onclick="onClickKotakHitam()"></div>
+
+            <p>wa've some size for you.</p>
+
+            <div class="text-center py-4">
+                <!-- Kotak Kecil 1 (putih dengan Border Hitam) -->
+                <div class="w-8 h-8 mx-auto mt-4 bg-white border border-black cursor-pointer inline-block relative"
+                    onclick="onClickKotakS()">
+                    <span
+                        class="text-black absolute inset-0 flex items-center justify-center transition-colors duration-300 ease-in-out hover:text-black">S</span>
+                </div>
+
+                <!-- Kotak Kecil 2 (Putih dengan Border Hitam) -->
+                <div class="w-8 h-8 mx-auto mt-4 bg-white border border-black cursor-pointer inline-block relative"
+                    onclick="onClickKotakM()">
+                    <span
+                        class="text-black absolute inset-0 flex items-center justify-center transition-colors duration-300 ease-in-out hover:text-black">M</span>
+                </div>
+
+                <!-- Kotak Kecil 3 (putih dengan Border Hitam) -->
+                <div class="w-8 h-8 mx-auto mt-4 bg-white border border-black cursor-pointer inline-block relative"
+                    onclick="onClickKotakL()">
+                    <span
+                        class="text-black absolute inset-0 flex items-center justify-center transition-colors duration-300 ease-in-out hover:text-black">L</span>
+                </div>
+
+                <!-- Kotak Kecil 4 (putih dengan Border Hitam) -->
+                <div class="w-8 h-8 mx-auto mt-4 bg-white border border-black cursor-pointer inline-block relative"
+                    onclick="onClickKotakXL()">
+                    <span
+                        class="text-black absolute inset-0 flex items-center justify-center transition-colors duration-300 ease-in-out hover:text-black">XL</span>
+                </div>
+                <div class="text-center">
+                    <!-- Kotak Go to cart (putih dengan Border Hitam) -->
+                    <div class="w-24 h-8 mx-auto mt-4 bg-white border border-black cursor-pointer inline-block relative"
+                        onclick="onClickKotakCart()">
+                        <span
+                            class="text-black absolute inset-0 flex items-center justify-center transition-colors duration-300 ease-in-out hover:text-black">Go
+                            to cart</span>
+                    </div>
+
+                    <!-- Kotak save (Putih dengan Border Hitam) -->
+                    <div class="w-24 h-8 mx-auto mt-4 bg-white border border-black cursor-pointer inline-block relative"
+                        onclick="onClickKotakSave()">
+                        <span
+                            class="text-black absolute inset-0 flex items-center justify-center transition-colors duration-300 ease-in-out hover:text-black">Save</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+</html>

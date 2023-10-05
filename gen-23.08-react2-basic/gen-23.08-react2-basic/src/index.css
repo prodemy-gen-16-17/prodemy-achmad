@@ -1,0 +1,209 @@
+
+/* Reset margin dan padding pada semua elemen */
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+
+.topnav {
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+}
+
+.topnav a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition-delay: 1s;
+}
+
+
+.topnav .active {
+  float: left;
+}
+
+
+.topnav a:hover {
+  background-color: rgb(207, 203, 203);
+}
+
+.logo-search {
+  position: absolute;
+  top: 30px;
+  right: 190px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  border: none;
+}
+
+
+.get-started {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  border: 1px solid #000;
+  padding: 8px 16px;
+  background-color: black;
+  border-radius: 5px;
+  color: white !important;
+  text-decoration: none;
+}
+
+
+.description {
+  background-color: white;
+  /* font-size: 24px; */
+  text-align: center;
+  font-family: 'Bitter', serif, 'Croissant One', cursive, 'Poppins', sans-serif;
+}
+
+.description h1 {
+display: inline-block;
+text-align: center;
+font-size: 50px;
+width: 500px;
+word-wrap: break-word;
+}
+
+.description p {
+display: inline-block;
+text-align: center;
+width: 450px;
+word-wrap: break-word;
+}
+
+.image-container {
+  background-color: white;
+  text-align: center;
+}
+
+
+.image-container img,
+.image img {
+  max-width: 45%;
+  height: auto;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.new_arivals,
+.new_arivals2,
+.top {
+  background-color: white;
+  text-align: center;
+  font-family: 'Bitter', serif, 'Croissant One', cursive, 'Playfair Display', serif, 'Poppins', sans-serif;
+}
+
+.customer {
+  background-color: rgba(255, 255, 255, 0.836);
+  text-align: center;
+  font-family: 'Bitter', serif, 'Croissant One', cursive, 'Playfair Display', serif, 'Poppins', sans-serif;
+
+}
+
+
+.new_arivals h1,
+.new_arivals p,
+.new_arivals2 h1,
+.new_arivals2 p,
+.top h1,
+.top p,
+.customer h1,
+.customer p {
+  display: inline-block;
+  /* Atur tampilan menjadi inline-block */
+  width: 300px;
+  /* Atur lebar yang sama untuk kedua elemen */
+}
+
+/* Pilihan tambahan: jika ingin menambahkan jarak antara h1 dan p */
+.new_arivals h1,
+.new_arivals2 h1,
+.top p {
+  margin-right: 20px;
+  /* Tambahkan margin kanan antara h1 dan p */
+}
+
+.image,
+.image2,
+.image3 {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.image figure,
+.image2 figure .image3 figure {
+  text-align: center;
+  margin: 0 1px;
+  width: 100%;
+  /* Atur lebar gambar menjadi 100% */
+  height: auto;
+  /* Menjaga rasio aspek gambar */
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+.image2 figure figcaption,
+.image3 figure figcaption {
+  font-size: 24px;
+  /* Atur ukuran teks sesuai kebutuhan */
+  font-weight: bold;
+  /* Atur ketebalan teks menjadi tebal */
+}
+
+.model1 {
+  background-color: white;
+}
+
+.model1 img {
+  width: 100%;
+  height: auto;
+  /* Menjaga rasio aspek gambar */
+}
+
+.ul-test {
+/* flex-direction: column;
+align-items: center; */
+  display: flex;
+  justify-content: center;
+}
+
+.li-test {
+  background-color: white;
+  border: 1px solid;
+  list-style-type: none;
+  padding: 20px;
+  margin: 10px;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  align-items: flex-start;
+  /* Untuk mengatur teks agar vertikalnya terpusat */
+  gap: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  /* Mengatur elemen vertikalnya di tengah */
+  gap: 20px;
+  /* Mengatur jarak antara teks dan input */
+}
+
+.checked {
+  color: orange;
+}

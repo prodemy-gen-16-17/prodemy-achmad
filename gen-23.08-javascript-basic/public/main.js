@@ -1,4 +1,14 @@
+// Get the product image element
+var productImage = document.querySelector('#carouselExampleControls img');
 
+// Add a click event listener to the product image
+productImage.addEventListener('click', function() {
+    // Get the value of the 'data-href' attribute
+    var nextPageUrl = productImage.getAttribute('data-href');
+
+    // Navigate to the next page
+    window.location.href = nextPageUrl;
+});
 // Function untuk kotak merah
 function onClickKotakMerah() {
     console.log('Kotak Merah Diklik');
