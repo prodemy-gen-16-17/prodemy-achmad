@@ -23,7 +23,7 @@ const data = [
   ];
   
   // Menggunakan metode filter untuk mencari objek dengan properti tertentu
-  const hasilFilter = data.filter(item => item.nama === "Eva");
+  const hasilFilter = data.filter(item => item.nama === "Bob");
   
   // Menampilkan semua properti satu per satu di console
   console.log("Hasil Filter (Semua Properti):");
