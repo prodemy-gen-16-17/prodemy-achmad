@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import NewArrivals from './NewArrivals';
 
 function Home() {
 
@@ -248,19 +249,6 @@ function Home() {
     
   );
 }
-
-function NewArrivals() {
-  return (
-    <div>
-      {/* Isi dari halaman New Arrivals */}
-      <div className="bg-white text-center py-4">
-        <h1 className="text-3xl font-bold">New Arrivals this Spring Season</h1>
-        <p>Spring has arrived, we come with fashion choices that are suitable to be combined with this season, lots of formal and informal clothes.</p>
-      </div>
-    </div>
-  );
-}
-
 
 function App() {
   return (
