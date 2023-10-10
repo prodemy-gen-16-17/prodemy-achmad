@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 
 function NewArrivals() {
   const [products, setProducts] = useState([
-    { name: 'Product A', price: 50, releaseDate: '2023-03-15' },
-    { name: 'Product B', price: 30, releaseDate: '2023-03-10' },
-    { name: 'Product C', price: 70, releaseDate: '2023-03-20' },
+    { name: 'Product A', price: 150, releaseDate: '2023-03-15', image: 'images/model2.png' },
+    { name: 'Product B', price: 30, releaseDate: '2023-03-10', image: 'images/baju5.jpg' },
+    { name: 'Product C', price: 70, releaseDate: '2023-03-20', image: 'images/baju7.jpg' },
   ]);
 
   const sortProducts = (sortBy) => {
@@ -55,6 +55,12 @@ function NewArrivals() {
             key={index}
             className="bg-gray-100 p-4 rounded border border-gray-300"
           >
+            {/* Menampilkan gambar */}
+            <img
+              src={product.image}
+              alt={product.name}
+              className="mb-2 rounded-md w-48 h-48"
+            />
             <h2 className="text-lg font-semibold">{product.name}</h2>
             <p>Price: ${product.price}</p>
             <p>Release Date: {product.releaseDate}</p>

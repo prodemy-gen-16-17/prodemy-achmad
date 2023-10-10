@@ -256,13 +256,13 @@ function App() {
       <div>
         {/* Navbar */}
         <div className="topnav bg-white overflow-hidden text-center">
-          <Link to="/" className="active inline-block py-2 px-4">Femworld</Link>
+          <Link to="/" className="active inline-block py-2 px-4">Home</Link>
           <Link to="/new-arrivals" className="inline-block py-2 px-4">New Arrivals</Link>
           {/* Tambahkan tautan lainnya */}
         </div>
         {/* Akhir Navbar */}
 
-        {/* Gunakan <Routes> sebagai kontainer rute */}
+
         <Routes>
           {/* Rute-rute aplikasi */}
           <Route path="/" element={<Home />} />
