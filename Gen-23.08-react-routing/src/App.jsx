@@ -254,24 +254,40 @@ function Home() {
 function App() {
   // Inisialisasi data produk di komponen App
   const [products, setProducts] = useState([
-    { id: 1, name: 'Sweater Jaket Sherpa Coat Saku Zipper', price: 150, releaseDate: '2023-03-25', image: '/images/model2.png' },
-    { id: 2, name: 'Gaun Panjang Hitam Elegan Gaun Kasual Wanita Lengan Panjang Kain Perca Pinggang Tinggi Gaun Kasual Wanita Korea Chic Jubah Polos Vestidos', price: 30, releaseDate: '2023-04-10', image: '/images/baju5.jpg' },
-    { id: 3, name: 'Tie Dye Printed T Shirt Women O-neck Short Irregular T Shirt Long Sleeve Sexy Streetwear Tee Vintage Mesh T-shirt Femme', price: 70, releaseDate: '2023-03-20', image: '/images/baju7.jpg' },
+    { id: 1, 
+      name: 'Sweater Jaket Sherpa Coat Saku Zipper', 
+      price: 150, 
+      releaseDate: '2023-03-25', 
+      image: '/images/model2.png',
+      rating: 4 },
+    { id: 2, 
+      name: 'Gaun Panjang Hitam Elegan Gaun Kasual Wanita Lengan Panjang Kain Perca Pinggang Tinggi Gaun Kasual Wanita Korea Chic Jubah Polos Vestidos', 
+      price: 30, 
+      releaseDate: '2023-04-10', 
+      image: '/images/baju5.jpg',
+      rating: 4 },
+    { id: 3, 
+      name: 'Tie Dye Printed T Shirt Women O-neck Short Irregular T Shirt Long Sleeve Sexy Streetwear Tee Vintage Mesh T-shirt Femme', 
+      price: 70, 
+      releaseDate: '2023-03-20', 
+      image: '/images/baju7.jpg',
+      rating: 4 },
     // Tambahkan produk lainnya
   ]);
   return (
     <Router>
       <div>
         {/* Navbar */}
-        <div className="topnav bg-white overflow-hidden text-center">
-          <Link to="/" className="active inline-block py-2 px-4">
+        <div className="topnav bg-black text-white text-center">
+          <Link to="/" className="inline-block py-2 px-4 border border-white rounded">
             Home
           </Link>
-          <Link to="/new-arrivals" className="inline-block py-2 px-4">
+          <Link to="/new-arrivals" className="inline-block py-2 px-4 border border-white rounded">
             New Arrivals
           </Link>
           {/* Tambahkan tautan lainnya */}
         </div>
+
         {/* Akhir Navbar */}
 
         <Routes>

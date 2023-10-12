@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import StarRating from './StarRating';
 
 function DetailProduct({ products }) {
   const { id } = useParams();
@@ -17,10 +18,20 @@ function DetailProduct({ products }) {
 
   const availableSizes = ['S', 'M', 'L'];
 
+  const handleBayarClick = () => {
+    // Tindakan yang akan dijalankan saat tombol "Bayar" diklik
+    alert('Anda akan melakukan pembayaran.');
+  };
+
+  const handleTaruhDiKeranjangClick = () => {
+    // Tindakan yang akan dijalankan saat tombol "Taruh di Keranjang" diklik
+    alert('Anda akan menambahkan produk ke keranjang.');
+  };
+
   return (
     <div className="flex">
       <div className="flex-shrink-0 w-1/2 pr-4">
-        <img src={product.image} alt={product.name}  width="500" height="200"/>
+        <img src={product.image} alt={product.name} width="500" height="200" />
       </div>
       <div className="w-1/2">
         <h1 className="text-2xl font-bold">{product.name}</h1>
@@ -40,6 +51,15 @@ function DetailProduct({ products }) {
               </span>
             </div>
           ))}
+        </div>
+        <StarRating rating={product.rating} />
+        <div className="mt-4">
+          <button className="bg-blue-500 text-white py-2 px-4 mr-4" onClick={handleBayarClick}>
+            Bayar
+          </button>
+          <button className="bg-green-500 text-white py-2 px-4" onClick={handleTaruhDiKeranjangClick}>
+            Taruh di Keranjang
+          </button>
         </div>
       </div>
     </div>
