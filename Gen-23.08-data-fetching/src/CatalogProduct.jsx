@@ -3,7 +3,7 @@ import useSWR from 'swr';
 import axios from 'axios';
 
 function CatalogProduct() {
-  const { data: products, error } = useSWR('/products', (url) =>
+  const { data: products, error } = useSWR('http://localhost:3000/products', (url) =>
     axios.get(url).then((res) => res.data)
   );
 

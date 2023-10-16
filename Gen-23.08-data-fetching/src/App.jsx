@@ -300,10 +300,10 @@ function App() {
           {/* Rute-rute aplikasi */}
           <Route path="/" element={<Home />} />
           <Route path="/new-arrivals" element={<NewArrivals products={products} />} />
-          {/* <Route path="/product/:id" element={<DetailProduct products={products} />} /> */}
-          <Route path="/product/:id">
+          <Route path="/product/:id" element={<DetailProduct products={products} />} />
+          {/* <Route path="/product/:id">
             <DetailProduct products={products} />
-          </Route>
+          </Route> */}
           {/* Tambahkan rute-rute lainnya */}
         </Routes>
       </div>

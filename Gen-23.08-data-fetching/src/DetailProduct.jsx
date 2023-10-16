@@ -4,27 +4,18 @@ import StarRating from './StarRating';
 import useSWR from 'swr';
 import axios from 'axios';
 
-function DetailProduct({ products }) {
+function DetailProduct() {
   const { id } = useParams();
-  // const product = products.find((product) => product.id === parseInt(id));
-  const { data: product, error } = useSWR(`/products/${id}`, (url) =>
-  axios.get(url).then((res) => res.data)
-);
-
-  if (!product) {
-    return <div>Produk tidak ditemukan.</div>;
-  }
-
-  const [selectedSize, setSelectedSize] = useState(null);
-
-  const handleSizeClick = (size) => {
-    setSelectedSize(size);
-    console.log(`Selected size: ${size}`);
-  };
+  const { data: product, error } = useSWR(`http://localhost:3000/products/${id}`, (url) =>
+    axios.get(url).then((res) => res.data)
+  );
 
   const availableSizes = ['S', 'M', 'L'];
+  
+  // Menempatkan semua Hooks di awal fungsi komponen
+  const [selectedSize, setSelectedSize] = useState(null);
 
-  const handleBayarClick = () => {
+const handleBayarClick = () => {
     // Tindakan yang akan dijalankan saat tombol "Bayar" diklik
     alert('Anda akan melakukan pembayaran.');
   };
@@ -33,6 +24,18 @@ function DetailProduct({ products }) {
     // Tindakan yang akan dijalankan saat tombol "Taruh di Keranjang" diklik
     alert('Anda akan menambahkan produk ke keranjang.');
   };
+
+  // ...
+
+  if (error) {
+    return <div>Error loading data.</div>;
+  }
+
+  if (!product) {
+    return <div>Produk tidak ditemukan.</div>;
+  }
+
+  // Sisanya dari komponen
 
   return (
     <div className="flex">
