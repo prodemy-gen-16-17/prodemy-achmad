@@ -6,8 +6,10 @@ import * as yup from 'yup';
 
 const schema = yup.object().shape({
     firstName: yup.string().required('First Name is required'),
-    lastName: yup.string().required('Last Name is required'),
+    address: yup.string().required('address is required'),
     email: yup.string().email('Invalid email').required('Email is required'),
+    phoneNumber: yup.string().matches(/^[0-9]+$/, 'Invalid phone number').required('Phone Number is required'),
+    size: yup.string().required('Size is required'),
     terms: yup.boolean().oneOf([true], 'You must accept the terms and conditions'),
 });
 
@@ -21,61 +23,69 @@ function CheckoutForm() {
     };
 
     return (
-        <div className="flex">
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <div>
+        <div className="flex h-screen items-center justify-center">
+            <form onSubmit={handleSubmit(onSubmit)} className="w-96 p-4 bg-gray-400 rounded-lg shadow-lg">
+                <div className="mb-4">
                     <label>First Name:</label>
                     <Controller
                         name="firstName"
                         control={control}
-                        render={({ field }) => <input {...field} defaultValue=""
-                            placeholder="firstName"
-                            className="w-50 rounded-lg border-[1px] border-gray-200 p-4 pe-12 text-sm focus:outline-sky-200" />}
+                        render={({ field }) => <input {...field} defaultValue="" placeholder="First Name" className="w-full p-2 rounded-lg border border-gray-200" />}
                     />
-                    <p>{errors.firstName?.message}</p>
+                    <p className="text-red-500">{errors.firstName?.message}</p>
                 </div>
 
-                <div>
-                    <label>Last Name:</label>
+                <div className="mb-4">
+                    <label>Address:</label>
                     <Controller
-                        name="lastName"
+                        name="address"
                         control={control}
-                        render={({ field }) => <input {...field} defaultValue=""
-                            placeholder="lastName"
-                            className="w-50 rounded-lg border-[1px] border-gray-200 p-4 pe-12 text-sm focus:outline-sky-200" />}
+                        render={({ field }) => <input {...field} defaultValue="" placeholder="Address" className="w-full p-2 rounded-lg border border-gray-200" />}
                     />
-                    <p>{errors.lastName?.message}</p>
+                    <p className="text-red-500">{errors.address?.message}</p>
                 </div>
 
-                <div>
+                <div className="mb-4">
                     <label>Email:</label>
                     <Controller
                         name="email"
                         control={control}
-                        render={({ field }) => <input {...field} defaultValue=""
-                            placeholder="email"
-                            className="w-50 rounded-lg border-[1px] border-gray-200 p-4 pe-12 text-sm focus:outline-sky-200" />}
+                        render={({ field }) => <input {...field} defaultValue="" placeholder="Email" className="w-full p-2 rounded-lg border border-gray-200" />}
                     />
-                    <p>{errors.email?.message}</p>
+                    <p className="text-red-500">{errors.email?.message}</p>
                 </div>
 
-                <div>
-                    <label>City:</label>
+                <div className="mb-4">
+                    <label>Phone Number:</label>
                     <Controller
-                        name="city"
+                        name="phoneNumber"
+                        control={control}
+                        render={({ field }) => <input {...field} defaultValue="" type="tel" placeholder="Phone Number" className="w-full p-2 rounded-lg border border-gray-200"/>
+                        }
+                    />
+                    <p className="text-red-500">{errors.phoneNumber?.message}</p>
+                </div>
+
+
+                <div className="mb-4">
+                    <label>Size</label>
+                    <Controller
+                        name="size"
                         control={control}
                         render={({ field }) => (
-                            <select {...field} className="w-50 rounded-lg border-[1px] border-gray-200 p-4 pe-12 text-sm focus:outline-sky-200">
-                                <option value="Select">Please Select</option>
-                                <option value="Jakarta">Jakarta</option>
-                                <option value="Bandung">Bandung</option>
+                            <select {...field} className="w-full p-2 rounded-lg border border-gray-200">
+                                <option value="">Please Select</option>
+                                <option value="S">Small</option>
+                                <option value="M">Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">Extra Large</option>
                             </select>
                         )}
                     />
-                    <p>{errors.city?.message}</p>
+                    <p className="text-red-500">{errors.size?.message}</p>
                 </div>
 
-                <div>
+                <div className="mb-4">
                     <label>
                         <Controller
                             name="terms"
@@ -86,13 +96,13 @@ function CheckoutForm() {
                         />{' '}
                         Accept Terms and Conditions
                     </label>
-                    <p>{errors.terms?.message}</p>
+                    <p className="text-red-500">{errors.terms?.message}</p>
                 </div>
 
-                <button type="submit" className="bg-blue-500 text-white py-2 px-4 mr-4">Submit</button>
-
+                <button type="submit" className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg">Submit</button>
             </form>
         </div>
+
 
     );
 }
