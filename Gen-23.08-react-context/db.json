@@ -1,30 +1,35 @@
-
 {
   "products": [
-      {
-        "id": 1,
-        "name": "Sweater Jaket Sherpa Coat Saku Zipper",
-        "price": 100,
-        "releaseDate": "2023-03-25",
-        "image": "/images/model2.png",
-        "rating": 5
-      },
-      {
-        "id": 2,
-        "name": "Gaun Panjang Hitam Elegan Gaun Kasual Wanita Lengan Panjang Kain Perca Pinggang Tinggi Gaun Kasual Wanita Korea Chic Jubah Polos Vestidos",
-        "price": 200,
-        "releaseDate": "2023-03-26",
-        "image": "/images/model3.png",
-        "rating": 4
-      },
-      {
-        "id": 3,
-        "name": "Tie Dye Printed T Shirt Women O-neck Short Irregular T Shirt Long Sleeve Sexy Streetwear Tee Vintage Mesh T-shirt Femme",
-        "price": 50,
-        "releaseDate": "2023-03-27",
-        "image": "/images/model4.png",
-        "rating": 3
-      }
-    ]
+    {
+      "id": 1,
+      "name": "Sweater Jaket Sherpa Coat Saku Zipper",
+      "price": 100,
+      "releaseDate": "2023-03-25",
+      "image": "/images/model2.png",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Gaun Panjang Hitam Elegan Gaun Kasual Wanita Lengan Panjang Kain Perca Pinggang Tinggi Gaun Kasual Wanita Korea Chic Jubah Polos Vestidos",
+      "price": 200,
+      "releaseDate": "2023-03-26",
+      "image": "/images/model3.png",
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "name": "Tie Dye Printed T Shirt Women O-neck Short Irregular T Shirt Long Sleeve Sexy Streetwear Tee Vintage Mesh T-shirt Femme",
+      "price": 50,
+      "releaseDate": "2023-03-27",
+      "image": "/images/model4.png",
+      "rating": 3
+    },
+    {
+      "id": 4
+    }
+  ],
+  "bookings": [
     
+  ]
+
 }

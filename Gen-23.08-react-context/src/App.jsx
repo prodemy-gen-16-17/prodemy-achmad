@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { FaShoppingCart } from 'react-icons/fa';
 import NewArrivals from './NewArrivals';
 import DetailProduct from './DetailProduct';
 import CheckoutForm from './CheckoutForm';
-import { OrderProvider } from './OrderContext';
-
+// import Cart from './Cart';
+import { CheckoutProvider } from './context/CartContext';
 
 function Home() {
 
@@ -284,8 +285,8 @@ function App() {
     // Tambahkan produk lainnya
   ]);
   return (
-    <Router>
-      <OrderProvider>
+    <CheckoutProvider>
+      <Router>
       <div>
         {/* Navbar */}
         <div className="topnav bg-black text-white text-center">
@@ -294,6 +295,9 @@ function App() {
           </Link>
           <Link to="/new-arrivals" className="inline-block py-2 px-4 border border-white rounded">
             New Arrivals
+          </Link>
+          <Link to="/cart" className="inline-block py-2 px-4 border border-white rounded">
+            <FaShoppingCart /> {/* Ganti teks "Cart" dengan ikon cart */}
           </Link>
           {/* Tambahkan tautan lainnya */}
         </div>
@@ -306,10 +310,14 @@ function App() {
           <Route path="/new-arrivals" element={<NewArrivals products={products} />} />
           <Route path="/product/:id" element={<DetailProduct products={products} />} />
           <Route path="/checkout" element={<CheckoutForm />} />
+          {/* <Route path="/cart" element={<Cart />} /> */}
+          {/* <Route path="/checkout/:id" component={CheckoutForm} /> */}
+
         </Routes>
       </div>
-      </OrderProvider>
     </Router>
+    </CheckoutProvider>
+    
   );
 }
 
