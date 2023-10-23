@@ -29,7 +29,17 @@
     }
   ],
   "bookings": [
-    
+    {
+      "firstName": "dandi",
+      "customerAddress": "meruya",
+      "customerEmail": "dandifernando31@gmail.com",
+      "phoneNumber": "08888888888",
+      "size": "S",
+      "productName": "Sweater Jaket Sherpa Coat Saku Zipper",
+      "price": 100,
+      "qty": 3,
+      "id": 1
+    }
   ]
 
 }

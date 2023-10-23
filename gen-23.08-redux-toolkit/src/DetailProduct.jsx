@@ -6,7 +6,7 @@ import StarRating from './StarRating';
 import useSWR from 'swr';
 import axios from 'axios';
 import BeatLoader from 'react-spinners/BeatLoader';
-import { checkoutBooking } from "./store/actions/checkoutAction";
+import { checkoutBooking } from "./store/reducers/checkoutSlice";
 
 
 const fetcher = (url) => axios.get(url).then((response) => response.data);
@@ -41,12 +41,7 @@ function DetailProduct() {
   };
 
   const onClickBuyNow = () => {
-    const payload = {
-      ...data,
-      qty,
-      size: selectedSize,
-    };
-    dispatch(checkoutBooking(payload));
+    dispatch(checkoutBooking({ ...data, qty }));
     navigate("/checkout");
   };
 
