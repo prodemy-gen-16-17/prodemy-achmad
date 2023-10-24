@@ -10,7 +10,7 @@ import { toRupiah } from "./utils/formatter";
 function CheckoutForm() {
     // const { dataCheckout } = useContext(CheckoutContext);
     const { dataCheckout } = useSelector((state) => state.checkout);
-    // console.log(dataCheckout);
+    console.log(dataCheckout);
 
     const schema = yup.object().shape({
         firstName: yup.string().required('First Name is required'),

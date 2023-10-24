@@ -7,6 +7,7 @@ import useSWR from 'swr';
 import axios from 'axios';
 import BeatLoader from 'react-spinners/BeatLoader';
 import { checkoutBooking } from "./store/reducers/checkoutSlice";
+import { addToCart } from "./store/reducers/addToCart";
 
 
 const fetcher = (url) => axios.get(url).then((response) => response.data);
@@ -43,6 +44,11 @@ function DetailProduct() {
   const onClickBuyNow = () => {
     dispatch(checkoutBooking({ ...data, qty }));
     navigate("/checkout");
+  };
+
+  const onClickAddToCart = () => {
+    dispatch(addToCart({ ...data, qty }));
+    navigate("/cart");
   };
 
 
@@ -104,6 +110,9 @@ function DetailProduct() {
         <div className="mt-4">
           <button className="bg-blue-500 text-white py-2 px-4 mr-4" onClick={onClickBuyNow}>
             Bayar
+          </button>
+          <button className="bg-green-500 text-white py-2 px-4" onClick={onClickAddToCart}>
+            Tambah ke Keranjang
           </button>
 
         </div>

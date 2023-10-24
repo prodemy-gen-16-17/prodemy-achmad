@@ -1,8 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  cartItems: [],
-  dataCheckout: {}, // Menambahkan properti untuk data checkout
+  cartItems: [], // Inisialisasi sebagai array kosong untuk menyimpan item di keranjang
 };
 
 const addToCartSlice = createSlice({
@@ -14,18 +13,16 @@ const addToCartSlice = createSlice({
       const existingProduct = state.cartItems.find((item) => item.id === productToAdd.id);
 
       if (existingProduct) {
+        // Jika produk sudah ada dalam keranjang, tambahkan jumlahnya
         existingProduct.qty += productToAdd.qty;
       } else {
+        // Jika produk belum ada dalam keranjang, tambahkan produk baru
         state.cartItems.push(productToAdd);
       }
-    },
-    checkoutBooking: (state, action) => {
-      state.dataCheckout = action.payload; // Menyimpan data checkout
     },
   },
 });
 
-export const { addToCart, checkoutBooking } = addToCartSlice.actions;
+export const { addToCart } = addToCartSlice.actions;
 
 export default addToCartSlice.reducer;
-
