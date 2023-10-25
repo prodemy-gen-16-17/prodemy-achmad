@@ -39,8 +39,9 @@ function LoginPage() {
   };
 
   return (
-    <div>
-      <h1 className="text-center font-bold text-2xl mb-4">Login</h1>
+    <div className="flex h-80vh items-center justify-center">
+        <div className="w-96 p-4 bg-gray-400 rounded-lg shadow-lg">
+        <h1 className="text-center font-bold text-2xl mb-4">Login</h1>
       <form
         className="flex flex-col gap-4"
         onSubmit={handleSubmit(onSubmitForm)}
@@ -67,10 +68,11 @@ function LoginPage() {
           />
           <p className="error">{errors.password?.message}</p>
         </div>
-        <Button isPrimary className="w-full">
-          Login
+        <Button isPrimary className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg">
+          Masuk
         </Button>
       </form>
+        </div>
     </div>
   );
 }

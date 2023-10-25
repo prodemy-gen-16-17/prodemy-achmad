@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
+import Layout from "./layouts/Layout";
 import LoginPage from "./LoginPage";
 import Home from './Home';
 import NewArrivals from './NewArrivals';
@@ -28,16 +29,21 @@ function App() {
           <Link to="/cart" className="inline-block py-2 px-4 border border-white rounded">
             <FaShoppingCart /> {/* Ganti teks "Cart" dengan ikon cart */}
           </Link>
+          {/* <Link to="/login" className="inline-block py-2 px-4 border border-white rounded">
+            Logout
+          </Link> */}
           {/* Tambahkan tautan lainnya */}
         </div>
 
         {/* Akhir Navbar */}
 
-        <Routes element={<GuestRoutes />}>
+        <Layout>
+        <Routes>
+        <Route element={<GuestRoutes />}>
           <Route path="/login" element={<LoginPage />} />
-        </Routes>
+        </Route>
 
-        <Routes element={<PrivateRoutes />}>
+        <Route element={<PrivateRoutes />}>
           {/* Rute-rute aplikasi */}
           <Route path="/" element={<Home />} />
           <Route path="/new-arrivals" element={<NewArrivals />} />
@@ -45,7 +51,11 @@ function App() {
           <Route path="/checkout" element={<CheckoutForm />} />
           <Route path="/cart" element={<Cart />} />
           {/* <Route path="/checkout/:id" component={CheckoutForm} /> */}
+        </Route>
         </Routes>
+        </Layout>
+       
+        
       </div>
     </CheckoutProvider>
 

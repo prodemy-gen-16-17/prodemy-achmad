@@ -110,6 +110,12 @@
       "password": "$2a$10$jRdn97cUV3o0rIn38w6Qb.JJVFfeLNvAWabIKjCMh4M6jrmCe3ps2",
       "name": "User 3",
       "id": 2
+    },
+    {
+      "email": "user4@gmail.com",
+      "password": "$2a$10$qBak.d0EHzksT3j35zZwMO99T7YZ6O71Qs8XVNoKqxpZxV8ALINOy",
+      "name": "User 4",
+      "id": 3
     }
   ]
 }
