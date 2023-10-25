@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
+import LoginPage from "./LoginPage";
 import Home from './Home';
 import NewArrivals from './NewArrivals';
 import DetailProduct from './DetailProduct';
 import CheckoutForm from './CheckoutForm';
 import Cart from './Cart';
 import { CheckoutProvider } from './context/CartContext';
+import PrivateRoutes from "./components/route/PrivateRoutes";
+import GuestRoutes from "./components/route/GuestRoutes";
 
 
 function App() {
-  
+
   return (
     <CheckoutProvider>
       <div>
@@ -30,7 +33,11 @@ function App() {
 
         {/* Akhir Navbar */}
 
-        <Routes>
+        <Routes element={<GuestRoutes />}>
+          <Route path="/login" element={<LoginPage />} />
+        </Routes>
+
+        <Routes element={<PrivateRoutes />}>
           {/* Rute-rute aplikasi */}
           <Route path="/" element={<Home />} />
           <Route path="/new-arrivals" element={<NewArrivals />} />
@@ -41,7 +48,7 @@ function App() {
         </Routes>
       </div>
     </CheckoutProvider>
-    
+
   );
 }
 
